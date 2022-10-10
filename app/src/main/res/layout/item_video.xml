@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/logo_video"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/hinhnen"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:cardCornerRadius="10dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txtnamevideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textColor="#E10909"
+                android:text="LÊ VĂN THẮNG"
+
+                android:padding="10dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="thắng"
+                android:textStyle="italic"
+                android:textSize="20dp"/>
+            <ImageView
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:id="@+id/idvideo"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/groupradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/tim"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="yêu thích"
+                    android:textSize="24dp"
+                    android:paddingLeft="10dp"
+                    android:layoutDirection="locale"
+                    android:button="@drawable/tim"
+
+                    />
+
+                <RadioButton
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/like"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:textSize="24dp"
+                    android:text="like"
+                    android:paddingLeft="5dp"
+                    android:layoutDirection="locale"
+                    android:button="@drawable/like1"
+                   />
+
+
+            </RadioGroup>
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
